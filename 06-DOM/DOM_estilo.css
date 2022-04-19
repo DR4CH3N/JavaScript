@@ -1,0 +1,13 @@
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.destaque-item {
+    color: purple;
+    background-color: lightblue;
+    border: solid 1px;
+    padding: 3px;
+    margin: 3px 0;
+}
