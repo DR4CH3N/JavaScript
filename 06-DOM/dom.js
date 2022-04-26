@@ -43,3 +43,33 @@ titulo.style.textAlign = "center";
 
 titulo.style.backgroundImage = 'linear-gradient(lightyellow, lightblue)';
 titulo.style.color = "red";
+
+const lista_editores = document.querySelector('#lista-editores');
+
+const ultimo = lista_editores.querySelector('li:last-child');
+
+ultimo.innerHTML = "<b>Deu ruim!</b>";
+
+const primeiro = lista_editores.querySelector('li:first-child');
+
+primeiro.innerHTML = "<b>Deu ruim 2!!</b>"
+
+const outro = lista_editores.querySelector('li:nth-child(2)');
+
+//outro.innerHTML = "<b>Deu ruim de novo!!!</b>"
+
+// outro.style.color = "blue";
+
+ultimo.classList.add('destaque-item');
+
+// adicionando o atributo TARGET em todos os links da lista de referencia
+// selecionando todos os links contidos na lista ul
+const links = document.querySelectorAll('ul li a');
+
+console.log(links);
+
+// links[0].style.color = "red";
+
+for (let i = 0; i < links.length; i++) {
+    links[i].setAttribute('taget', '_blank');
+}
