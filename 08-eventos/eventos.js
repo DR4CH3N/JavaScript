@@ -6,3 +6,5 @@ function clique() {
     console.log(nome.value);
     resultado.textContent = nome.value;
 }
+
+// desafio: digite o valor em dolar para saber o valor em real
