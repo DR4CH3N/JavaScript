@@ -54,6 +54,7 @@ let desconto = 77.88;
 let precoFinal = preco - desconto;
 
 // função dentro de função
+// dollar
 function formataValor(valor) {
     return valor.toLocaleString('en', {
         style: 'currency',
@@ -64,6 +65,7 @@ function formataValor(valor) {
 console.log( formataValor(preco) )
 
 // arrow
+// Real brasileiro
 let formataPreco = valor => {
     return valor.toLocaleString('pt-br', {
         style: 'currency',
@@ -72,3 +74,5 @@ let formataPreco = valor => {
 }
 
 console.log( formataPreco(preco) );
+console.log( formataValor(desconto) );
+console.log( formataPreco(precoFinal) )
