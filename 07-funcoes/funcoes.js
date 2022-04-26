@@ -76,3 +76,6 @@ let formataPreco = valor => {
 console.log( formataPreco(preco) );
 console.log( formataValor(desconto) );
 console.log( formataPreco(precoFinal) )
+
+console.log("--------------------------")
+
