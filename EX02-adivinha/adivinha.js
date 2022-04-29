@@ -24,3 +24,7 @@ formulario.addEventListener('submit', function(event) {
     resultado.innerHTML = "ERROU!";
 };
 });
+
+// desafio 1: caso palpitar mais de 3 vezes o usuario nao pode mais jogar
+// desafio 2: dar uma dica para o usuario (caso ele errar) comparando o numero digitado com o numero escolhido pelo computador 
+// (porem não exibindo o numero exato, apenas dizendo se é maior ou menor)
