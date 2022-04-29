@@ -50,9 +50,12 @@ formulario.addEventListener('submit', function(event) {
     // previne o comportamento padrão do formulario (ao enviar) 
     event.preventDefault();
 
-    let cotacao = document.getElementById('cotacao')
-
+    let cotacao = parseFloat( document.getElementById('cotacao').value );
+    let valor = parseFloat( document.getElementById('valor').value );
+    let converte = valor * cotacao;
     
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `o valor convertido em reais é ${converte}`;
 });
 
  
