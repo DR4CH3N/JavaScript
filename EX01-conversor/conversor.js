@@ -52,7 +52,7 @@ formulario.addEventListener('submit', function(event) {
 
     let cotacao = parseFloat( document.getElementById('cotacao').value );
     let valor = parseFloat( document.getElementById('valor').value );
-    let converte = valor * cotacao;
+    let converte = (valor * cotacao).toFixed(2);
     
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = `o valor convertido em reais é ${converte}`;
